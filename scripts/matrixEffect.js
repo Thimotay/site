@@ -32,6 +32,6 @@ function matrixEffect() {
     }
 }
 
-  window.addEventListener("scroll", matrixEffect);
+window.addEventListener("scroll", matrixEffect);
 
 

@@ -4,7 +4,6 @@ https://www.presse-citron.net/hebergeur/faq/nom-de-domaine/
 .fr ou .com
 mathieucoutant.fr
 mathieu-coutant.fr
-mathieu.coutant.fr
 ===========================================
 créer un sorte de générateur d'images pour
 l'image de background: cercles reliés placés
@@ -22,16 +21,12 @@ intégrer les projet déjà fait:
 - JAM
 - projets perso
 ===========================================
-CV téléchargeable + ajouter des onglets "expérience", "éducation", etc sur la page aboutme
+CV téléchargeable + ajouter des onglets "expérience" avec des sliders
 ===========================================
-réseaux sociaux / addresse mail pro
+addresse mail pro avec option de m'envoyer un mail via le site (adresse à part)
 ===========================================
 Voir pour faire un lien avec github /
  itch.io / steam
-===========================================
-Garder les articles mais faire ça un peu 
-dans le genre "Ses jeux qui m'ont marqué"
-de JDG
 ===========================================
 Pages: 
 Moi / About Me  => Style "Japonais"
