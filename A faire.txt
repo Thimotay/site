@@ -1,0 +1,47 @@
+===========================================
+Pour le nom de domaine :
+https://www.presse-citron.net/hebergeur/faq/nom-de-domaine/
+.fr ou .com
+mathieucoutant.fr
+mathieu-coutant.fr
+mathieu.coutant.fr
+===========================================
+créer un sorte de générateur d'images pour
+l'image de background: cercles reliés placés
+aléatoirement
+ou image animé inspirée de delaunay
+===========================================
+Faire mes propres photos pour les background
+***retouche photo***
+===========================================
+intégrer les projet déjà fait:
+- jeu de terminale
+- projet informatique
+- (GATE)
+- CELL
+- JAM
+- projets perso
+===========================================
+CV téléchargeable + ajouter des onglets "expérience", "éducation", etc sur la page aboutme
+===========================================
+réseaux sociaux / addresse mail pro
+===========================================
+Voir pour faire un lien avec github /
+ itch.io / steam
+===========================================
+Garder les articles mais faire ça un peu 
+dans le genre "Ses jeux qui m'ont marqué"
+de JDG
+===========================================
+Pages: 
+Moi / About Me  => Style "Japonais"
+Jeux / Games  => Pixel art
+Code / Code  =>  Matrix Effect
+Gallerie / Art  => ....
+===========================================
+CODE :    =>   Créer une interface du style paremètres/infos à gauche et canva à droite
+- Génération procedurale ( diagramme de 
+voronoi, flood fill maze, lazy flood fill,
+BSP Rooms, Simplex/Perlin Noise, ... )
+- Game of life
+- Pavages
