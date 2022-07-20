@@ -15,14 +15,16 @@ var intervalId = window.setInterval(function(){
     matrixEffect();
   }, 100);
 
+  /* clearInterval(intervalId) */
+
 function matrixEffect() {
     var matrixElements = document.querySelectorAll(".applyMatrixEffect");
     var characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890";
     for (var i = 0; i < matrixElements.length; i++) {
         var windowHeight = window.innerHeight;
         var elementTop = matrixElements[i].getBoundingClientRect().top;
-        var offset = windowHeight*0.06;
-        if (elementTop > windowHeight - offset*3 || elementTop < offset) {
+        var offset = windowHeight*0.04;
+        if (elementTop > windowHeight - offset*4 || elementTop < offset) {
             var length = matrixElements[i].innerHTML.length;
             var newWord = "";
             for (var j = 0; j < length; j++){
