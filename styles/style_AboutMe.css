@@ -195,6 +195,34 @@ body {
 	margin: 0 3rem 0 3rem;
 }
 
+label {
+	display: inline-block;
+	font-size:1.3rem;
+	margin: 1rem 0 0 5%;
+	width:15%;
+	text-align: left;
+}
+.progress_bar_container {
+	display: inline-block;
+	background-color:#525252;
+	margin-top: 1rem;
+	width:70%;
+	height:10px;
+	border-radius: 5px;
+}
+.progress_bar {
+	background-color: rgb(121, 226, 216);
+	height:10px;
+	border-radius: 5px;
+}
+.PGReveal {
+	width: 0%;
+	transition: 1s ease-out;
+}
+.PGReveal.active {
+	width: 100%;
+}
+
 .contacts img {
 	background-size:cover;
 	background-position:center;
@@ -203,11 +231,9 @@ body {
 	vertical-align: middle;
 	margin-right: 0.5em;
 }
-
 .contactsContainer {
 	display: flex;
 }
-
 .contacts {
 	background: linear-gradient(to bottom, #ec81d5, #fc9898);
 	margin: 1%;
@@ -218,7 +244,6 @@ body {
 	text-decoration: none;
 	color:white;
 }
-
 .contacts:hover {
 	background: linear-gradient(to bottom, #eb9dda, #ffbdbd);
 }
