@@ -11,6 +11,10 @@ monospace font-families :
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 */
 
+var intervalId = window.setInterval(function(){
+    matrixEffect();
+  }, 100);
+
 function matrixEffect() {
     var matrixElements = document.querySelectorAll(".applyMatrixEffect");
     var characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ01234567890";
@@ -31,7 +35,3 @@ function matrixEffect() {
         }
     }
 }
-
-window.addEventListener("scroll", matrixEffect);
-
-
