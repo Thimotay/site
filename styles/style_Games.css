@@ -114,7 +114,7 @@ body {
   color:black;
 }
 .nav_page li:hover {
-  background:linear-gradient(#ffacac, #f8a2de);
+  background:linear-gradient(#2ff197, #37cff5);
   color:white;
 }
   
@@ -135,7 +135,7 @@ body {
   float:right;
 	padding:0.3rem 0 0.3rem 0;
 	margin:8px 1.4rem 0 0;
-  background:linear-gradient(to right, #ec81d5, #7b7379);	
+  background:linear-gradient(to right, #2ff197, #37cff5);	
 	border-radius:1.4rem;
 }
 .returntop a {
