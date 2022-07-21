@@ -35,8 +35,12 @@ Code / Code  =>  Matrix Effect
 Gallerie / Art  => ....
 ===========================================
 CODE :    =>   Créer une interface du style paremètres/infos à gauche et canva à droite
-- Génération procedurale ( diagramme de 
-voronoi, flood fill maze, lazy flood fill,
-BSP Rooms, Simplex/Perlin Noise, ... )
+
+- Génération procedurale ( diagramme de voronoi, flood fill maze, lazy flood fill, BSP Rooms, Simplex/Perlin Noise, ... )
+https://stackoverflow.com/questions/155069/how-does-one-get-started-with-procedural-generation
+
 - Game of life
+
 - Pavages
+
+- Algo de tri

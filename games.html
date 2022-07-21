@@ -6,10 +6,13 @@
 
 		<link rel="icon" href="assets/icon.jpg">
 		<link rel="stylesheet" href="styles/style_Games.css"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet"> 
 	</head>
 	<body>
 		<nav class="nav_princ" id="goToTop">
-			<div class="nav_site navac" style="background-color:#ffaaee;"><a href="aboutme.html"><p>Accueil</p></a></div>
+			<div class="nav_site navac" style="background-color:#ffaaee;"><a href="index.html"><p>Accueil</p></a></div>
 			<div class="nav_site navart" style="background-color:#006600;"><a href="games.html"><p>Jeux</p></a></div>
 			<div class="nav_site navpro" style="background-color:#003d99;"><a href="code.html"><p>Code</p></a></div>
 			<div class="nav_site navjou" style="background-color:#991f00;"><a href=""><p>Art</p></a></div>
@@ -19,30 +22,40 @@
 			<h1>Jeux</h1>
 		</div>
 		<nav class="nav_page">
-			<a href="#goTo1" style="text-decoration:none;" class="nav_page_pres"><li>Geckolot</li></a>
-			<a href="#goTo2" style="text-decoration:none;" class="nav_page_som"><li>Blob Art</li></a>
+			<a href="#goToGeckolot" style="text-decoration:none;" class="nav_page_pres"><li>Geckolot</li></a>
+			<a href="#goToBlobArt" style="text-decoration:none;" class="nav_page_som"><li>Blob Art</li></a>
 			<div class="returntop"><a href="#goToTop">Haut</a></div>
 		</nav>
 		<div class="main">
-			<div class="main_section" style="background-color: rgb(239, 207, 164);">
-				<div class="game_container" id="goTo1">
-					<h1 style="color: rgb(70, 192, 203)">Geckolot</h1>
+			<div class="main_section" style="background-color: rgb(239, 207, 164);  background-image: url(assets/images/GeckolotBG.png);">
+				<div class="game_container" id="goToGeckolot">
+					<img src="./assets/images/GeckolotLogo.png" style="height:30%; width:auto; image-rendering: pixelated;">
+					<br>
 					<div class="gameDescription">
 						<p>		
 							Geckolot se joue à deux. Chaque joueur a une capacité spéciale : l'axolotl peut attirer le gecko à lui tandis que ce dernier peut repousser l'axolotl.
-						Les deux joueurs doivent s'entraider pour pouvoir surmonter les obstacles de la grotte dans laquelle ils sont coincés.
+						Les deux joueurs doivent s'entraider pour surmonter les obstacles de la grotte dans laquelle ils sont coincés.
 						<br>
 						<br>
 						<br>
 						Geckolot est un jeu réalisé durant la Globale Game JAM 2022 sur Unity avec une équipe de 8 personnes. J'ai participé au Game Design, Level Design et à la création de l'histoire.
 						</p>
-						<a href=""></a>
 					</div>
-				</div>	
+					<br>
+					<a class="geckolotLinks" href="https://mathieu-coutant.itch.io/geckolot" target="_blank" style="background-color: rgba(255, 174, 149, 0.822);">
+						Itch.io
+						<img src="./assets/images/GeckolotGecko.png" style="width:auto; image-rendering: pixelated; margin:0;">
+					</a>
+					<a class="geckolotLinks" href="https://github.com/Hugo-Carbiener/Geckolot" target="_blank" style="background-color: rgba(66, 161, 216, 0.822);">
+						<img src="./assets/images/GeckolotAxolotl.png" style="width:auto; image-rendering: pixelated; margin:0;">
+						GitHub
+					</a>
+				</div>
 			</div>
-			<div class="main_section" style="background-color: rgb(255, 255, 210);">
-				<div class="game_container"  id="goTo2">
-					<h1 style="color:rgb(0, 0, 0)">Blob Art</h1>
+			<div class="main_section" style="background-color: rgb(255, 255, 200);">
+				<div class="game_container"  id="goToBlobArt">
+					<img src="assets/images/BlobArtLogo.png" style="height:30%; width:auto; image-rendering: pixelated;">
+					<br>
 					<div class="gameDescription"> 
 						<p>
 							Blob Art est un jeu de pixel art. Le joueur doit reproduire des pixels art en se déplaçant sur une grille.<br>
@@ -52,13 +65,19 @@
 							<br>
 							Ce jeu a été réalisé en Java avec la librairie LibGDX. L'équipe était composée de trois personne. Pour ma part j'ai réalisé les graphismes du jeu et une grande partie du code.
 						</p>
-						<a href=""></a>
 					</div>
+					<br>
+					<a class="blobArtLinks" href="" target="_blank" style="">
+						Itch.io
+					</a>
+					<a class="blobArtLinks" href="" target="_blank" style="">
+						GitHub
+					</a>
 				</div>
 			</div>
 		</div>
 		<footer>
-			<p>Me contacter</p>
+			<p>Ceci est un footer</p>
 		</footer>
 	</body>
 </html>
