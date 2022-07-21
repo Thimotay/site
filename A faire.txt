@@ -44,3 +44,4 @@ https://stackoverflow.com/questions/155069/how-does-one-get-started-with-procedu
 - Pavages
 
 - Algo de tri
+https://en.wikipedia.org/wiki/Sorting_algorithm

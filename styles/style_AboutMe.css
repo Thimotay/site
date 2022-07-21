@@ -269,6 +269,11 @@ footer p {
 	color:#d1d0d0;
 	font-size:1.3rem;
 }
+footer a {
+	color:#d1d0d0;
+	font-size:1.3rem;
+	text-decoration:none;
+}
 
 
 /*==================Custom Scrollbar==================*/
