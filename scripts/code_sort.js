@@ -6,11 +6,13 @@ https://www.w3schools.com/tags/ref_canvas.asp
 
 */
 
-var selector = document.getElementById("sel");
-var canvas = document.getElementById("myCanvas");
-var ctx = canvas.getContext("2d");
+var selector = document.getElementById('sel');
+var canvas = document.getElementById('myCanvas');
+var ctx = canvas.getContext('2d');
 var fps = 10;
 var sortType;
+var interval;
+var isAnimated = false;
 
 var arrayLength = 100;
 var numArray;
@@ -19,26 +21,26 @@ var step = 0;
 
 setSortType();
 
-
 /* =========== Handle the resize of the canvas =========== */
+
 updateCanvasSize();
-window.addEventListener("resize", updateCanvasSize);
+window.addEventListener('resize', updateCanvasSize);
 
 function updateCanvasSize() {
-  canvas.setAttribute('width', window.getComputedStyle(canvas, null).getPropertyValue("width"));
-  canvas.setAttribute('height', window.getComputedStyle(canvas, null).getPropertyValue("height"));
+  canvas.setAttribute('width', window.getComputedStyle(canvas, null).getPropertyValue('width'));
+  canvas.setAttribute('height', window.getComputedStyle(canvas, null).getPropertyValue('height'));
 }
 
 /* =========== Selector =========== */
 
-function setSortType(){
+function setSortType() {
   if  (sortType != getSelectorValue()){
     sortType = getSelectorValue();
     initializeSort();
   }
 }
 
-function getSelectorValue(){
+function getSelectorValue() {
   return selector.selectedIndex;
 }
 
@@ -58,8 +60,7 @@ function initializeSort() {
 
 /* =========== Function repeated =========== */
 
-// TODO:TEMPORAIRE JE PENSE
-var intervalId = window.setInterval(function(){
+function performSort() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   switch (sortType) {
     case 0:
@@ -77,7 +78,7 @@ var intervalId = window.setInterval(function(){
       break;
   }
   step ++;
-}, 1000/fps);
+}
 
 function drawVisual(oriX, oriY, width, height, nbArray) {
   for (let i = 0; i < nbArray.length; i++) {
@@ -94,7 +95,6 @@ function getIndexOfFirstValidValue(array) {
       return i;
     }
   }
-  
 }
 
 /* =========== Randomizer =========== */
@@ -115,6 +115,38 @@ function zeroArray(length) {
   return res;
 }
 
+/* =========== Options =========== */
+
+function animate(){
+  interval = window.setInterval(performSort, 1000/fps);
+}
+
+function stop() {
+  window.clearInterval(interval); 
+}
+
+function pause() {
+  if (isAnimated == true) {
+    stop();
+    isAnimated = false;
+  } else {
+    animate();
+    isAnimated = true;
+  }
+}
+
+function reroll() {
+  initializeSort();
+  //performSort();
+}
+
+function next() {
+  if (isAnimated == false) {
+    performSort();
+  }
+}
+
+
 /* =========== Insertion Sort =========== */
 
 function initializeInsertionSort() {
@@ -123,16 +155,18 @@ function initializeInsertionSort() {
 }
 
 function drawInsertionSort(){
+  ctx.font = "50px Times New Roman";
+  ctx.fillText("Insertion Sort", 500, 100);
   ctx.beginPath();
-  ctx.lineWidth = "2";
-  ctx.strokeStyle = "#FFFFFF";
+  ctx.lineWidth = '2';
+  ctx.strokeStyle = '#FFFFFF';
   ctx.rect(20, 20, 1300, 900);
   ctx.stroke();
   ctx.beginPath();
-  ctx.lineWidth = "4";
-  ctx.strokeStyle = "#999999";
-  ctx.rect(100, 300, 500, 500);
-  ctx.rect(700, 300, 500, 500);
+  ctx.lineWidth = '4';
+  ctx.strokeStyle = '#999999';
+  ctx.rect(98, 298, 504, 504);
+  ctx.rect(698, 298, 504, 504);
   ctx.stroke();
 
   drawVisual(100, 300, 500, 500, numArray);
@@ -142,21 +176,16 @@ function drawInsertionSort(){
 function performInsertionStep(step){
   var index = getIndexOfFirstValidValue(numArray);
   for (let i = 1; i < numArray.length; i++) {
-    if (numArray[i-1][1] != '#FF0000' && numArray[i-1][1] != '#000000') {
-      numArray[i-1][1] = '#FFFFFF';
-    }
-    if (numArray[i][1] != '#000000') {
-      numArray[i][1] = '#00FF00';
-    }
     if (numArray[i][0] < numArray[index][0] && numArray[i][1] != '#000000') {
-      numArray[index][1] = '#FFFFFF';
       index = i;
-      numArray[index][1] = '#FF0000';
     }
   }
-  numArray[index][1] = '#000000';
+  numArray[index][1] = '#FF0000';
   numArrayV2[step][0] = numArray[index][0];
+  numArrayV2[step][1] = '#FF0000';
   drawInsertionSort();
+  numArray[index][1] = '#000000';
+  numArrayV2[step][1] = '#FFFFFF';
 }
 
 /* =========== Quick Sort =========== */
@@ -167,8 +196,8 @@ function initializeQuickSort() {
 
 function drawRedRect(){
   ctx.beginPath();
-  ctx.lineWidth = "2";
-  ctx.strokeStyle = "#FF0000";
+  ctx.lineWidth = '2';
+  ctx.strokeStyle = '#FF0000';
   ctx.rect(20, 20, 1300, 900);
   ctx.rect(100, 300, 500, 500);
   ctx.stroke();
@@ -178,8 +207,8 @@ function drawRedRect(){
 
 function drawBlueRect(){
   ctx.beginPath();
-  ctx.lineWidth = "2";
-  ctx.strokeStyle = "#0000FF";
+  ctx.lineWidth = '2';
+  ctx.strokeStyle = '#0000FF';
   ctx.rect(20, 20, 1300, 900);
   ctx.rect(100, 300, 500, 500);
   ctx.stroke();
