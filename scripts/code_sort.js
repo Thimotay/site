@@ -9,13 +9,13 @@ https://www.w3schools.com/tags/ref_canvas.asp
 var selector = document.getElementById("sel");
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
-var fps = 1;
+var fps = 10;
 var sortType;
 
 var arrayLength = 100;
 var numArray;
 var numArrayV2;
-var step;
+var step = 0;
 
 setSortType();
 
@@ -43,6 +43,7 @@ function getSelectorValue(){
 }
 
 function initializeSort() {
+  step=0;
   switch (sortType) {
     case 0:
       initializeInsertionSort();
@@ -59,9 +60,14 @@ function initializeSort() {
 
 // TODO:TEMPORAIRE JE PENSE
 var intervalId = window.setInterval(function(){
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
   switch (sortType) {
     case 0:
-      performInsertionSort();
+      if (step < numArray.length) {
+        performInsertionStep(step);
+      } else {
+        drawInsertionSort();
+      }
       break;
     case 1:
       drawRedRect();
@@ -70,8 +76,8 @@ var intervalId = window.setInterval(function(){
       drawBlueRect();
       break;
   }
+  step ++;
 }, 1000/fps);
-  
 
 function drawVisual(oriX, oriY, width, height, nbArray) {
   for (let i = 0; i < nbArray.length; i++) {
@@ -111,19 +117,12 @@ function zeroArray(length) {
 
 /* =========== Insertion Sort =========== */
 
-function performInsertionSort() {
-  for (let i = 0; i < numArray.length; i++) {
-    performInsertionStep(i);
-  }
-}
-
 function initializeInsertionSort() {
   numArray = randomArray(arrayLength);
   numArrayV2 = zeroArray(arrayLength);
 }
 
 function drawInsertionSort(){
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.beginPath();
   ctx.lineWidth = "2";
   ctx.strokeStyle = "#FFFFFF";
