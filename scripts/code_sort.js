@@ -19,8 +19,6 @@ var numArray;
 var numArrayV2;
 var step = 0;
 
-setSortType();
-
 /* =========== Handle the resize of the canvas =========== */
 
 updateCanvasSize();
@@ -31,17 +29,42 @@ function updateCanvasSize() {
   canvas.setAttribute('height', window.getComputedStyle(canvas, null).getPropertyValue('height'));
 }
 
+setSortType();
+
 /* =========== Selector =========== */
 
 function setSortType() {
   if  (sortType != getSelectorValue()){
     sortType = getSelectorValue();
     initializeSort();
+    drawSort();
   }
 }
 
 function getSelectorValue() {
   return selector.selectedIndex;
+}
+
+/* =========== Function repeated =========== */
+
+function performSort() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  switch (sortType) {
+    case 0:
+      if (step < numArray.length) {
+        performInsertionStep(step);
+      } else {
+        drawInsertionSort();
+      }
+      break;
+    case 1:
+      drawQuickRect();
+      break;
+    default:
+      drawOtherSort();
+      break;
+  }
+  step ++;
 }
 
 function initializeSort() {
@@ -58,26 +81,19 @@ function initializeSort() {
   }
 }
 
-/* =========== Function repeated =========== */
-
-function performSort() {
+function drawSort() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   switch (sortType) {
     case 0:
-      if (step < numArray.length) {
-        performInsertionStep(step);
-      } else {
-        drawInsertionSort();
-      }
+      drawInsertionSort();
       break;
     case 1:
-      drawRedRect();
+      drawQuickSort();
       break;
     default:
-      drawBlueRect();
+      drawOtherSort();
       break;
   }
-  step ++;
 }
 
 function drawVisual(oriX, oriY, width, height, nbArray) {
@@ -137,7 +153,7 @@ function pause() {
 
 function reroll() {
   initializeSort();
-  //performSort();
+  drawSort();
 }
 
 function next() {
@@ -194,7 +210,7 @@ function initializeQuickSort() {
 
 }
 
-function drawRedRect(){
+function drawQuickSort(){
   ctx.beginPath();
   ctx.lineWidth = '2';
   ctx.strokeStyle = '#FF0000';
@@ -205,7 +221,7 @@ function drawRedRect(){
 
 /* =========== Other Sort =========== */
 
-function drawBlueRect(){
+function drawOtherSort(){
   ctx.beginPath();
   ctx.lineWidth = '2';
   ctx.strokeStyle = '#0000FF';
