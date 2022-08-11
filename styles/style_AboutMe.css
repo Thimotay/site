@@ -1,4 +1,4 @@
-/*General*/
+/*==================General==================*/
 html {
   scroll-behavior: smooth;
 }
@@ -174,7 +174,7 @@ body {
 	height: auto;
 	width: auto;
 	margin:40px 0 60px 0;
-	overflow: auto;
+	overflow: hidden;
 }
 .title_part {
 	text-align:center;
@@ -201,7 +201,7 @@ body {
 	text-align: left;
 	font-weight: bold;
 }
-label {
+.skills label {
 	display: inline-block;
 	font-size:1.3rem;
 	margin: 1rem 0 0 5%;
@@ -221,11 +221,11 @@ label {
 	height:10px;
 	border-radius: 5px;
 }
-.PGReveal {
+.scrollReveal {
 	width: 0%;
 	transition: 1s ease-out;
 }
-.PGReveal.active {
+.scrollReveal.active {
 	width: 100%;
 }
 
@@ -252,6 +252,73 @@ label {
 }
 .contacts:hover {
 	background: linear-gradient(to bottom, #eb9dda, #ffbdbd);
+}
+.timeline {
+	list-style: none;
+	margin-left:11rem;
+	width:auto;
+	border-left: 5px solid aquamarine;
+}
+.timeline input {
+	-webkit-appearance: none;
+}
+.timeline.relative {
+	width:auto;
+}
+.date {
+	position:absolute;
+	display: inline-block;
+	text-align: right;
+	width:8rem;
+	transform: translate(-12rem);
+}
+.circle {
+	height: 0.8rem;
+	width: 0.8rem;
+	border: 5px solid aquamarine;
+	background-color:white;
+	border-radius: 0.8rem;
+	position:absolute;
+	display: inline-block;
+	transform: translate(-3.4rem);
+}
+.circle.active {
+	background-color: aquamarine;
+}
+.timelineTitle {
+	cursor:pointer;
+	padding-left:1rem;
+	font-size:1.5em;
+	font-weight: bold;
+	width:auto;
+	display: inline-block;
+	transform: translate(-1rem, -0.2rem);
+}
+.timelineDescription {
+	width:auto;
+	height:0;
+	transition: 0.8s;
+	transition-delay: 0.2s;
+}
+.timelineDescription p{
+	cursor: default;
+	font-size: 1.2rem;
+	min-width: 50rem;  /*A VOIR EN REM POUR QUE CA NE DEPASSE JAMAIS*/
+	padding: 1em;
+	transition:color 0.3s;
+	color: #21212100;
+}
+.timelineDescription.active {
+	height: 10rem;
+	background-color: #eeeeee;
+	transition:0.8s;
+}
+.timelineDescription.active p{
+	cursor:auto;
+	position:relative;
+	transition:color 0.3s;
+	transition-delay: 0.7s;
+	color: #212121;
 }
 
 .gray_text {

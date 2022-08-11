@@ -1,7 +1,7 @@
-/* Code from https://alvarotrigo.com/blog/css-animations-scroll/ */
+/* Sample code from https://alvarotrigo.com/blog/css-animations-scroll/ */
 
-function reveal() {
-  var revealElements = document.querySelectorAll(".PGReveal");
+function animate() {
+  var revealElements = document.querySelectorAll(".scrollReveal");
   for (var i = 0; i < revealElements.length; i++) {
       var windowHeight = window.innerHeight;
       var elementTop = revealElements[i].getBoundingClientRect().top;
@@ -13,6 +13,6 @@ function reveal() {
   }
 }
 
-window.addEventListener("scroll", reveal);
+window.addEventListener("scroll", animate);
 
-reveal();
+animate();

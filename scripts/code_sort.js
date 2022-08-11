@@ -52,12 +52,15 @@ function performSort() {
   switch (sortType) {
     case 0:
       if (step < numArray.length) {
-        performInsertionStep(step);
+        performSelectionStep(step);
       } else {
-        drawInsertionSort();
+        drawSelectionSort();
       }
       break;
     case 1:
+      drawInsertionRect();
+      break;
+    case 2:
       drawQuickRect();
       break;
     default:
@@ -71,9 +74,12 @@ function initializeSort() {
   step=0;
   switch (sortType) {
     case 0:
-      initializeInsertionSort();
+      initializeSelectionSort();
       break;
     case 1:
+      initializeInsertionSort();
+      break;
+    case 2:
       initializeQuickSort();
       break;
     default:
@@ -85,9 +91,12 @@ function drawSort() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   switch (sortType) {
     case 0:
-      drawInsertionSort();
+      drawSelectionSort();
       break;
     case 1:
+      drawInsertionSort();
+      break;
+    case 2:
       drawQuickSort();
       break;
     default:
@@ -163,16 +172,17 @@ function next() {
 }
 
 
-/* =========== Insertion Sort =========== */
+/* =========== Selection Sort =========== */
 
-function initializeInsertionSort() {
+function initializeSelectionSort() {
   numArray = randomArray(arrayLength);
   numArrayV2 = zeroArray(arrayLength);
 }
 
-function drawInsertionSort(){
+function drawSelectionSort(){
   ctx.font = "50px Times New Roman";
-  ctx.fillText("Insertion Sort", 500, 100);
+  ctx.fillStyle = "#FFFFFF";
+  ctx.fillText("Selection Sort", 500, 100);
   ctx.beginPath();
   ctx.lineWidth = '2';
   ctx.strokeStyle = '#FFFFFF';
@@ -189,7 +199,7 @@ function drawInsertionSort(){
   drawVisual(700, 300, 500, 500, numArrayV2);
 }
 
-function performInsertionStep(step){
+function performSelectionStep(step){
   var index = getIndexOfFirstValidValue(numArray);
   for (let i = 1; i < numArray.length; i++) {
     if (numArray[i][0] < numArray[index][0] && numArray[i][1] != '#000000') {
@@ -199,9 +209,24 @@ function performInsertionStep(step){
   numArray[index][1] = '#FF0000';
   numArrayV2[step][0] = numArray[index][0];
   numArrayV2[step][1] = '#FF0000';
-  drawInsertionSort();
+  drawSelectionSort();
   numArray[index][1] = '#000000';
   numArrayV2[step][1] = '#FFFFFF';
+}
+
+/* =========== Insertion Sort =========== */
+
+function initializeInsertionSort() {
+
+}
+
+function drawInsertionSort(){
+  ctx.beginPath();
+  ctx.lineWidth = '2';
+  ctx.strokeStyle = '#FFFF00';
+  ctx.rect(20, 20, 1300, 900);
+  ctx.rect(100, 300, 500, 500);
+  ctx.stroke();
 }
 
 /* =========== Quick Sort =========== */

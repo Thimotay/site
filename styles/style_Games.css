@@ -157,7 +157,7 @@ body {
   
   /*==================Content==================*/
 .main {
-  background-color:#d9d9d9;
+  background-color: #000000;
   min-width:1100px;
 }
 
@@ -166,6 +166,11 @@ body {
   height: 55rem;
   background-size:cover;
   background-position: center;
+  transition:0.5s;
+}
+.main_section.active{
+  opacity: 0.3;
+  transition:0.5s;
 }
 .game_container {
   margin:0 10% 0 10%;
