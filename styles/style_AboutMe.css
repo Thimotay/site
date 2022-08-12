@@ -287,12 +287,11 @@ body {
 }
 .timelineTitle {
 	cursor:pointer;
-	padding-left:1rem;
 	font-size:1.5em;
 	font-weight: bold;
 	width:auto;
 	display: inline-block;
-	transform: translate(-1rem, -0.2rem);
+	transform: translate(0rem, -0.2rem);
 }
 .timelineDescription {
 	width:auto;
@@ -309,7 +308,7 @@ body {
 	color: #21212100;
 }
 .timelineDescription.active {
-	height: 10rem;
+	height: 12rem;
 	background-color: #eeeeee;
 	transition:0.8s;
 }

@@ -21,18 +21,23 @@ intégrer les projet déjà fait:
 - JAM
 - projets perso
 ===========================================
-CV téléchargeable + ajouter des onglets "expérience" avec des sliders
-===========================================
 addresse mail pro avec option de m'envoyer un mail via le site (adresse à part)
 ===========================================
 Voir pour faire un lien avec github /
  itch.io / steam
 ===========================================
-Pages: 
 Moi / About Me  => Style "Japonais"
+===========================================
 Jeux / Games  => Pixel art
+
+Faire un pixel art giga quali avec pleins de ref à pleins de jeux
+===========================================
 Code / Code  =>  Matrix Effect
+
+Bouton pour désactiver le matrix effect
+===========================================
 Gallerie / Art  => ....
+
 ===========================================
 CODE :    =>   Créer une interface du style paremètres/infos à gauche et canva à droite
 

@@ -22,7 +22,7 @@
 			<a href="#goToPresentation" style="text-decoration:none;" class="nav_page_pres"><li>Présentation</li></a>
 			<a href="#goToContacts" style="text-decoration:none;" class="nav_page_som"><li>Liens</li></a>
 			<a href="#goToSkills" style="text-decoration:none;" class="nav_page_som"><li>Compétences</li></a>
-			<a href="#goToExp" style="text-decoration:none;" class="nav_page_som"><li>Expérience</li></a>
+			<a href="#goToExp" style="text-decoration:none;" class="nav_page_som"><li>Expériences</li></a>
 			<div class="returntop"><a href="#goToTop">Haut</a></div>
 		</nav>
 		<div class="main">
@@ -31,7 +31,7 @@
 					<h2 class="title_part">Présentation</h2>
 					<div class="photo"></div>
 					<p>Passionné de jeux et de programmation, j'ai créé quelques petites choses que je partage sur ce site.</p>
-					<p>Vous trouverez les jeux auxquels j'ai pu apporter ma touche, des programmes que j'ai codé et mes créations diverses.</p>
+					<p>Vous trouverez les jeux auxquels j'ai pu apporter ma touche, des programmes que j'ai codé pour le fun et mes créations diverses.</p>
 				</div>
 				<hr id="goToContacts">
 				<div class="article">
@@ -93,79 +93,93 @@
 				</div>
 				<hr id="goToExp">
 				<div class="article">
-					<h2 class="title_part">Expérience</h2>
+					<h2 class="title_part">Formation et Expériences</h2>
 					<!--https://codepen.io/billie66/pen/AzMbom
 					https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input/radio
 					https://codepen.io/bcarvalho/pen/RZqmZX-->
 
 					<ul class="timeline">
 						<li>
-							<input class="timestamp" type="radio" name="exp" id="exp1" onchange="displayElement('.exp1')">
+							<input class="timestamp" type="radio" name="exp" id="exp1" onchange="displayElement('.exp1')" checked>
 							<div class="relative">
-								<span class="date">2015 - 2019</span>
+								<span class="date gray_text">2015 - 2019</span>
 								<div class="circle"></div>
 								<label for="exp1" class="timelineTitle">Lycée</label>
 							</div>
 							<div class="timelineDescription exp1">
 								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio ea necessitatibus quo velit natus cupiditate qui alias possimus ab praesentium nostrum quidem obcaecati nesciunt! <br>
-									Molestiae officiis voluptate excepturi rem veritatis eum aliquam qui laborum non ipsam ullam tempore reprehenderit illum eligendi cumque mollitia temporibus! Natus dicta qui est optio rerum.
+									C'est au lycée que j'ai découvert la programmation via l'option ISN (Informatique et Science du Numérique). C'est pendant cette période que j'ai envisagé d'en faire mon métier.
+									<br>
+									Durant mon année de Terminale j'ai aussi créé mon premier jeu vidéo en Processing. 
 								</p>
 							</div>
 						</li>
 						<li>
 							<input class="timestamp" type="radio" name="exp" id="exp2" onchange="displayElement('.exp2')">
 							<div class="relative">
-								<span class="date">Été 2019</span>
+								<span class="date gray_text">Été 2019</span>
 								<div class="circle"></div>
 								<label for="exp2" class="timelineTitle">Bénévolat à la SNEJ 2019</label>
 							</div>
 							<div class="timelineDescription exp2">
 								<p>
-									Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla<br>Bla<br>Bla
+									J'ai été bénévole pour la SNEJ (Semaine Nationale et Européenne des Jeunes), une semaine réservée aux mineurs et consacrée à la découverte d'une région en vélo. L'édition 2019 se situait à La Flèche.
+									<br>
+									Ayant déjà participé en tant que jeune, j'ai décidé d'être bénévole. Durant la semaine j'ai donc pu voir le coté organisation de l'événement. Je me suis occupé d'orienter les jeunes, préparer les installations et j'ai aussi évalué les participants au critérium national de cyclotourisme qui se déroule pendant la semaine.
 								</p>
 							</div>
 						</li>
 						<li>
 							<input class="timestamp" type="radio" name="exp" id="exp3" onchange="displayElement('.exp3')">
 							<div class="relative">
-								<span class="date">2019 - 2021</span>
+								<span class="date gray_text">2019 - 2021</span>
 								<div class="circle"></div>
 								<label for="exp3" class="timelineTitle">Classe Préparatoire</label>
 							</div>
 							<div class="timelineDescription exp3">
 								<p>
-									Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla<br>Bla<br>Bla
+									Suite au lycée j'ai été pris dans en classe préparatoire aux grandes écoles au Lycée Clémenceau à Nantes en MPSI puis en PSI.
+									<br>
+									Pendant cette période l'un de mes cours préféré était le cours d'informatique en Python. Ce qui m'a convaincu de continuer dans cette voie en choississant l'école Télécom Sudparis, spécialisée dans le numérique.
 								</p>
 							</div>
 						</li>
 						<li>
 							<input class="timestamp" type="radio" name="exp" id="exp4" onchange="displayElement('.exp4')">
 							<div class="relative">
-								<span class="date">2021 - En cours</span>
+								<span class="date gray_text">2021 - En cours</span>
 								<div class="circle"></div>
 								<label for="exp4" class="timelineTitle">Télécom Sudparis</label>
 							</div>
 							<div class="timelineDescription exp4">
 								<p>
-									Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla<br>Bla<br>Bla
+									A Télécom Sudparis, j'ai appris le bash et le Java, descompétences que j'ai développé par la suite.
+									<br>
+									En deuxième année, j'ai été vice-président du club de création de jeux (jeux-vidéos, jeux de société, escape game, etc.), c'est le club qui m'a le plus stimulé pendant cette période. 
 								</p>
 							</div>
 						</li>
 						<li>
-							<input class="timestamp" type="radio" name="exp" id="exp5" onchange="displayElement('.exp5')" checked>
+							<input class="timestamp" type="radio" name="exp" id="exp5" onchange="displayElement('.exp5')">
 							<div class="relative">
-								<span class="date">Été 2022</span>
+								<span class="date gray_text">Été 2022</span>
 								<div class="circle"></div>
 								<label for="exp5" class="timelineTitle">Stage chez Kosmopolead</label>
 							</div>
 							<div class="timelineDescription exp5">
 								<p>
-									Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla<br>Bla<br>Bla
+									Durant ce stage de neuf semaines j'ai découvert Ruby on Rails et l'architecture logiciel modèle-vue-contrôleur. Concretement j'ai codé plusieurs API:
+									<br>
+									 - Une première qui reçoit des requetes de recherche d'adresses et les redirigent vers le service correspondant (BAN ou photon). Elle m'a permis de prendre en main Ruby on Rails.
+									<br>
+									 - Une seconde qui reçoit des requetes d'envoie de SMS, qu'elle transmet au service SendInBlue, et qui suit l'état du SMS jusqu'à ce qu'il arrive tout en renvoyant des webhooks au client pour renseigner son état.
 								</p>
 							</div>
 						</li>
 					</ul>
+				</div>
+				<hr>
+				<div class="article">
 				</div>
 			</div>
 		</div>
