@@ -26,10 +26,8 @@ intégrer les projet déjà fait:
 ===========================================
 addresse mail pro avec option de m'envoyer un mail via le site (adresse à part)
 ===========================================
-Voir pour faire un lien avec github /
- itch.io / steam
-===========================================
 Moi / About Me  => Style "Japonais"
+
 ===========================================
 Jeux / Games  => Pixel art
 
