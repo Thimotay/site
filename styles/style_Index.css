@@ -229,30 +229,34 @@ body {
 	width: 100%;
 }
 
-.contacts img {
-	background-size:cover;
-	background-position:center;
-	height:2em;
-	width:2em;
-	vertical-align: middle;
-	margin-right: 0.5em;
-}
 .contactsContainer {
 	display: flex;
 }
+.contactsColumn {
+	flex: 50%;
+}
+.contacts img {
+	height:2em;
+	width:2em;
+	margin: 1em;
+}
 .contacts {
-	background: linear-gradient(to bottom, #ec81d5, #fc9898);
-	margin: 1%;
-	padding: 0.5em;
-	border-radius:2mm;
-	height:2%;
-	font-size: 120%;
+	background: linear-gradient(to right, #c7aac6, #cfbad6);
+	width: 100%;
+	display:flex;
+	height:auto;
+	font-size: 100%;
 	text-decoration: none;
-	color:white;
+	color: white;
+	opacity: 0.7;
+	transition: 1s;
 }
 .contacts:hover {
-	background: linear-gradient(to bottom, #eb9dda, #ffbdbd);
+	background:linear-gradient(to right, #ec81d5, #fc9898);
+	opacity: 1;
+	transition: 1s;
 }
+
 .timeline {
 	list-style: none;
 	margin-left:11rem;

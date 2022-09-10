@@ -7,4 +7,4 @@ function displayElement(sel) {
   selectedElement.classList.add("active");
 }
 
-displayElement(".exp1");
+displayElement(".exp5");

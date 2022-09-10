@@ -5,7 +5,7 @@
 		<title>Mathieu Coutant</title>
 		
 		<link rel="icon" href="assets/icon.jpg">
-		<link rel="stylesheet" href="styles/style_AboutMe.css"/>
+		<link rel="stylesheet" href="styles/style_Index.css"/>
   </head>
 	<body>
 		<nav class="nav_princ" id="goToTop">
@@ -37,26 +37,30 @@
 				<div class="article">
 					<h2 class="title_part ">Liens</h2>
 					<div class="contactsContainer">
-						<a href ="https://github.com/Thimotay" target="_blank" class="contacts"> 
-							<img src="./assets/images/Logo_Github.png">
-							GitHub
-						</a>
-						<a href ="" target="_blank" class="contacts">
-							<img src="./assets/images/Logo_mail.png">
-							Mail
-						</a>
-						<a href ="https://www.linkedin.com/in/mathieu-coutant/" target="_blank" class="contacts"> 
-							<img src="./assets/images/Logo_LinkedIn.png">
-							LinkedIn
-						</a>
-						<a href ="https://mathieu-coutant.itch.io/" target="_blank" class="contacts"> 
-							<img src="./assets/images/Logo_itch.png">
-							Itch.io
-						</a>
-						<a href ="assets/CV_Mathieu_Coutant.pdf" target="_blank" class="contacts"> 
-							CV
-						</a>
-					</div>	
+						<div class="contactsColumn">
+							<a href ="https://www.linkedin.com/in/mathieu-coutant/" target="_blank" class="contacts"> 
+								<img src="./assets/images/Logo_LinkedIn.png">
+								<p>LinkedIn</p>
+							</a>
+							<script type=text/javascript> var name = "mcoutant2003" ; var domain = "gmail.com" ; document.write('<a href="mailto:' + name + '@' + domain + '" target="_blank" class="contacts">') ;</script>
+								<img src="./assets/images/Logo_mail.png">
+								<p>Mail</p>
+							</a>
+							<a href ="assets/CV_Mathieu_Coutant.pdf" target="_blank" class="contacts"> 
+								<p>CV</p>
+							</a>
+						</div>
+						<div class="contactsColumn">
+							<a href ="https://github.com/Thimotay" target="_blank" class="contacts"> 
+								<img src="./assets/images/Logo_Github.png">
+								<p>GitHub</p>
+							</a>
+							<a href ="https://mathieu-coutant.itch.io/" target="_blank" class="contacts"> 
+								<img src="./assets/images/Logo_itch.png">
+								<p>Itch.io</p>
+							</a>
+						</div>
+					</div>
 				</div>
 				<hr id="goToSkills">
 				<div class="article skills">
@@ -96,7 +100,7 @@
 					<h2 class="title_part">Formation et Expériences</h2>
 					<ul class="timeline">
 						<li>
-							<input class="timestamp" type="radio" name="exp" id="exp1" onchange="displayElement('.exp1')" checked>
+							<input class="timestamp" type="radio" name="exp" id="exp1" onchange="displayElement('.exp1')">
 							<div class="relative">
 								<span class="date gray_text">2015 - 2019</span>
 								<div class="circle"></div>
@@ -156,7 +160,7 @@
 							</div>
 						</li>
 						<li>
-							<input class="timestamp" type="radio" name="exp" id="exp5" onchange="displayElement('.exp5')">
+							<input class="timestamp" type="radio" name="exp" id="exp5" onchange="displayElement('.exp5')"  checked>
 							<div class="relative">
 								<span class="date gray_text">Été 2022</span>
 								<div class="circle"></div>

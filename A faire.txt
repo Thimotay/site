@@ -12,9 +12,13 @@ ou image animé inspirée de delaunay
 ===========================================
 Faire mes propres photos pour les background
 ***retouche photo***
+- A world of moule
 ===========================================
 SEO / SMO / SEM / SEA
+===========================================
+Nav page juste en dessous du nav et qui apparait en hover du nav
 
+OU alors un lenu en dessous des onglets
 ===========================================
 intégrer les projet déjà fait:
 - jeu de terminale
@@ -38,9 +42,10 @@ Code / Code  =>  Matrix Effect
 Bouton pour désactiver le matrix effect
 ===========================================
 Gallerie / Art  => ....
-
+- Page dessin
+- Page photos
 ===========================================
-CODE :    =>   Créer une interface du style paremètres/infos à gauche et canva à droite
+CODE :    =>   Créer une interface du style paramètres/infos à gauche et canva à droite
 
 - Génération procedurale ( diagramme de voronoi, flood fill maze, lazy flood fill, BSP Rooms, Simplex/Perlin Noise, ... )
 https://stackoverflow.com/questions/155069/how-does-one-get-started-with-procedural-generation
