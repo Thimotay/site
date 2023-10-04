@@ -2,33 +2,33 @@
 <html lang="fr">
 	<head>
 		<meta charset="utf-8" />
-		<meta name="description" content="My website to put my creations.">
 		<meta name="author" content="JMathieu Coutant">		<title>MC - Jeux</title>
+		<meta name="description" content="My website to put my creations.">
 
-		<link rel="icon" href="assets/icon.jpg">
-		<link rel="stylesheet" href="styles/style_Games.css"/>
+		<link rel="icon" href="assets/icon.png">
+		<link rel="stylesheet" href="styles/style_global.css"/>
+		<link rel="stylesheet" href="styles/style_games.css"/>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet"> 
 	</head>
 	<body>
-		<nav class="nav_princ" id="goToTop">
-			<div class="nav_site navac" style="background-color:#ffaaee;"><a href="index.html"><p>Accueil</p></a></div>
-			<div class="nav_site navart" style="background-color:#006600;"><a href="games.html"><p>Jeux</p></a></div>
-			<div class="nav_site navpro" style="background-color:#003d99;"><a href="code.html"><p>Code</p></a></div>
-			<div class="nav_site navjou" style="background-color:#991f00;"><a href=""><p>Art</p></a></div>
-			<div class="nav_desc"><p>Choix de langues</p></div>
+		<nav class="nav_cont" id="goToTop">
+			<div class="nav_site"><a href="index.html"><p>Accueil</p></a></div>
+			<div class="nav_site"><a href="games.html"><p>Jeux</p></a></div>
+			<!--<div class="nav_site"><a href="code.html"><p>Code</p></a></div>-->
+			<div class="nav_lang"><p>FR / <a href="en/games.html">EN</a></p></div>
 		</nav>
 		<div class="header-frontpage">
-			<h1>Jeux</h1>
+			<h1 style="font-family: 'Mochiy Pop One', sans-serif;">Jeux</h1>
 		</div>
 		<nav class="nav_page">
 			<a href="#goToGeckolot" style="text-decoration:none;" class="nav_page_pres"><li>Geckolot</li></a>
 			<a href="#goToBlobArt" style="text-decoration:none;" class="nav_page_som"><li>Blob Art</li></a>
-			<div class="returntop"><a href="#goToTop">Haut</a></div>
+			<div class="returntop" style="background:linear-gradient(to right, #2ff197, #37cff5);	"><a href="#goToTop">Haut</a></div>
 		</nav>
 		<div class="main">
-			<div class="main_section" style="background-image: url(assets/images/GeckolotBG.png);">
+			<div class="main_section" style="background-image: url(./assets/images/GeckolotBG.png);">
 				<div class="game_container" id="goToGeckolot">
 					<img src="./assets/images/GeckolotLogo.png" style="height:30%; width:auto; image-rendering: pixelated;">
 					<br>
@@ -53,9 +53,9 @@
 					</a>
 				</div>
 			</div>
-			<div class="main_section" style="background-image: url(assets/images/BlobArtBG.PNG);">
+			<div class="main_section" style="background-image: url(./assets/images/BlobArtBG.png);">
 				<div class="game_container"  id="goToBlobArt">
-					<img src="assets/images/BlobArtLogo.png" style="height:30%; width:auto; image-rendering: pixelated; ">
+					<img src="./assets/images/BlobArtLogo.png" style="height:30%; width:auto; image-rendering: pixelated; ">
 					<br>
 					<div class="gameDescription"> 
 						<p>
@@ -78,7 +78,7 @@
 			</div>
 		</div>
 		<footer>
-			<p>Merci à <a href="https://www.w3schools.com/" target="_blank">W3schools.com</a> de fournir l'hébergement du site.</p>
+			<p>Merci à <a href="https://pages.github.com/" target="_blank">GitHub Pages</a> de fournir l'hébergement du site.</p>
 		</footer>
 		<script src="scripts/gamesDarkerer.js"></script>
 	</body>

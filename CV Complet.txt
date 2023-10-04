@@ -1,0 +1,45 @@
+
+
+
+Baccalauréat scientifique : Spécialité ISN (Informatique et Sciences du Numérique)
+Lycée Europe Robert Schumann - Cholet, 49
+- Diplôme obtenu avec mention Très Bien
+- Membre du Conseil de la Vie Lycéenne (CVL)
+
+Classe préparatoire : MPSI puis PSI, 2019-2021
+
+Ecole d'ingénieur
+- MOOC "Gestion de projet", 2021
+- MOOC "Numérique Responsable", 2022
+- Webinar "Inclusion & Jeu Vidéo : l'alliance impossible ?" (proposé par Ubisoft)
+- MOOC ImpAct sur la Santé et Sécurité au Travail
+
+
+Expérience
+
+Stage de 9 semaines chez Kosmopolead - Été 2022
+      - Création d'une API d'envoie de requêtes de recherche d'adresse à des base de données avec Ruby on Rails
+      - Création d'une API qui gère l'envoie de SMS avec Ruby on Rails
+
+Projet GATE "Laitquitable" (projet de promotion)
+      - organisation d'évènements 
+      - recherche de partenariats
+Projet de création d'un jeu-vidéo en Java avec la librairie LibGDX
+Création d’un jeu de type platfromer avec Processing
+Création d'un jeu de type hack'n slash avec Unity
+
+Bénévolat pendant la SNEJ 2019 (Semaine nationale et européenne des jeunes)
+
+Vice-président d'un club de création de jeux
+      - organisation de formations, d'ateliers découverte
+      - participation à des Game JAM
+
+
+Compétences acquises avec les cours
+- 
+- 
+- 
+
+
+
+

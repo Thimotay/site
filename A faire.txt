@@ -32,6 +32,7 @@ addresse mail pro avec option de m'envoyer un mail via le site (adresse à part)
 ===========================================
 Moi / About Me  => Style "Japonais"
 
+Faire CV complet avec TOUT
 ===========================================
 Jeux / Games  => Pixel art
 

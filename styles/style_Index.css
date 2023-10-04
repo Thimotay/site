@@ -1,160 +1,11 @@
-/*==================General==================*/
-html {
-  scroll-behavior: smooth;
-}
-body {
-	margin:0;
-	padding:0;
-	font-family: "Times New Roman", Times, serif;
-}
-
-
- /*==================Main nav==================*/
-.nav_princ {
-	top:0;
-  height:4.5em;
-	width:100%;
-	font-family: "Times New Roman", Times, serif;
-}
-.nav_site {
-	display:inline-block;
-	height:100%;
-	margin-right:0.3%;
-}
-.nav_site a {
-	background-color:rgb(255, 255, 255);
-	display:inline-block;
-	height:100%;
-	padding: 0 1em 0 1em;
-	text-decoration:none;
-}
-.nav_site a p {
-	margin-top:0.5em;
-	font-weight:bold;
-	font-size:2em;
-	color:black;
-}
-.nav_site a:hover {
-	height:90%;
-	transition:0.4s;
-	opacity:0.9;
-}
-
-/*display or not each link*/
-@media screen and (max-width: 600px) {
-	.navjou {
-		display:none;
-	}
-}
-@media screen and (max-width: 450px) {
-	.navpro {
-		display:none;
-	}
-}
-@media screen and (max-width: 300px) {
-	.navart {
-		display:none;
-	}
-}
-
-/*Small text at the right*/
-.nav_desc {
-	background-color:white;
-	float:right;
-	font-size:1.3rem;
-	text-decoration:none;
-	color:grey;
-	margin:1.5em 1.5em 0 0;
-}
-.nav_desc p{
-	margin:0;
-}
-@media screen and (max-width: 850px) {
-	.nav_desc {
-		display:none;
-	}
-}
-
-
-/*==================Image/Canva==================*/
-.header-frontpage {
-	width:100%;
-	background-image: url(../assets/images/img-frontpage.jpg);
-	background-size:cover;
-	background-attachment:fixed;
-	background-position: center;
-	text-align:center;
-	padding: 10% 0 10% 0;
-}
-.header-frontpage h1 {
-	margin:0;
-	color:white;
-	font-size:7rem;
-}
-
-
- /*==================Nav of the page==================*/
-.nav_page {
-	height:3rem;
-	background:linear-gradient(to right, #f2f2f2, #e6e6e6);	
-	position:sticky;
-	top:0;
-	box-shadow:0 0 0.8em #212121;
-	z-index:2;
-}
-.nav_page li {
-	height:3rem;
-	background-color:white;
-	padding:0 1rem 0 1rem;
-	text-align:center;
-	display:table-cell;
-	vertical-align: middle;
-	font-size:1.3rem;
-	text-decoration:none;
-	color:black;
+/*==================Specification of style_global==================*/
+.nav_lang a {
+	color:rgb(230, 0, 150);
 }
 .nav_page li:hover {
 	background:linear-gradient(#fc9898, #f8a2de);
-	color:white;
 }
-
-/*display or not each link*/
-@media screen and (max-width: 220px) {
-	.nav_page_pres {
-		display:none;
-	}
-}
-@media screen and (max-width: 330px) {
-	.nav_page_som {
-		display:none;
-	}
-}
- 
- /*button return to the top of the page*/
-.returntop {
-	float:right;
-	padding:0.3rem 0 0.3rem 0;
-	margin:8px 1.4rem 0 0;
-	background:linear-gradient(to right, #ec81d5, #fc9898);
-	border-radius:1.4rem;
-}
-.returntop a {
-	padding:0.4rem 0.7rem 0.4rem 0.7rem;
-	font-size:1.3rem;
-	text-decoration:none;
-	color:white;
-}
-.returntop:hover {
-	margin:0.5rem 1.3rem 0 0;
-	transition:0.3s;
-}
-.returntop a:hover {
-	font-size:1.4rem;
-	color:#d9d9d9;
-	transition:0.3s;
-}
-
-
+  
 /*==================Content==================*/
 .main {
 	background-color:#d9d9d9;
@@ -166,7 +17,7 @@ body {
 	padding:3% 3% 3% 3%;
 	background-color:white;
 	box-shadow:0 0 50px #808080;
-	color:#212121; /*text color*/ 
+	color:#212121;
 }
 
 /*article = sections in the content*/
@@ -232,8 +83,14 @@ body {
 .contactsContainer {
 	display: flex;
 }
+@media screen and (max-width: 600px) {
+	.contactsContainer {
+		display: block;
+	}
+}
+	
 .contactsColumn {
-	flex: 50%;
+	flex: 100%;
 }
 .contacts img {
 	height:2em;
@@ -286,9 +143,6 @@ body {
 	display: inline-block;
 	transform: translate(-3.4rem);
 }
-.circle.active {
-	background-color: aquamarine;
-}
 .timelineTitle {
 	cursor:pointer;
 	font-size:1.5em;
@@ -306,64 +160,30 @@ body {
 .timelineDescription p{
 	cursor: default;
 	font-size: 1.2rem;
-	min-width: 50rem;  /*A VOIR EN REM POUR QUE CA NE DEPASSE JAMAIS*/
-	padding: 1em;
+	min-width: 600px;  /*TO CHANGE SO THAT IT DOES NOT OVERSTEP WITH THE OTHER THINGS*/
 	transition:color 0.3s;
 	color: #21212100;
+  user-select: none;
+	-webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
 }
 .timelineDescription.active {
 	height: 12rem;
-	background-color: #eeeeee;
-	transition:0.8s;
+}
+.timelineDescription.active.exp6{
+	height: 15rem;
 }
 .timelineDescription.active p{
 	cursor:auto;
 	position:relative;
 	transition:color 0.3s;
 	transition-delay: 0.7s;
-	color: #212121;
+	color: #4d4d4d;
+  user-select: auto;
+	-webkit-user-select: auto; /* Safari */
+  -ms-user-select: auto; /* IE 10 and IE 11 */
 }
 
 .gray_text {
 	color:#666666;
-}
-
-/*==================Footer==================*/
-footer {
-	height:150px;
-	background-color:#333333;
-	text-align:center;
-	padding:2rem;
-	}
-footer p {
-	color:#d1d0d0;
-	font-size:1.3rem;
-}
-footer a {
-	color:#d1d0d0;
-	font-size:1.3rem;
-	text-decoration:none;
-}
-
-
-/*==================Custom Scrollbar==================*/
-::-webkit-scrollbar {
-  width: 15px;
-}
-
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px #404040; 
-  background: #d9d9d9; 
-}
- 
-::-webkit-scrollbar-thumb {
-  background: white; 
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-	background:#a6a6a6; 
-}
-::-webkit-scrollbar-thumb:active {
-	background: #737373; 
 }
