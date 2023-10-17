@@ -43,7 +43,7 @@
 	width:10rem;
 	border-radius:5rem;
 	float:left;
-	margin: 0 3rem 0 3rem;
+	margin: 0 3rem 3rem 3rem;
 }
 
 .skills_sub_cat {
@@ -121,6 +121,7 @@
 	border-left: 5px solid aquamarine;
 }
 .timeline input {
+	appearance: none;
 	-webkit-appearance: none;
 }
 .timeline.relative {
@@ -157,23 +158,41 @@
 	transition: 0.8s;
 	transition-delay: 0.2s;
 }
-.timelineDescription p{
+.timelineDescription p,.timelineDescription p a{
 	cursor: default;
 	font-size: 1.2rem;
-	min-width: 600px;  /*TO CHANGE SO THAT IT DOES NOT OVERSTEP WITH THE OTHER THINGS*/
+	/*text-align : justify;*/
+	min-width: 600px;  
 	transition:color 0.3s;
 	color: #21212100;
   user-select: none;
 	-webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
 }
+/*TO CHANGE SO THAT IT DOES NOT OVERSTEP WITH THE OTHER THINGS*/
+/*This is ugly but it is impossible to adapt the height to the text automatically*/
 .timelineDescription.active {
-	height: 12rem;
+	height: 12rem; /*Basic height to avoid bugs*/
 }
-.timelineDescription.active.exp6{
+.timelineDescription.active.exp1{
 	height: 15rem;
 }
-.timelineDescription.active p{
+.timelineDescription.active.exp2{
+	height: 11rem;
+}
+.timelineDescription.active.exp3{
+	height: 8rem;
+}
+.timelineDescription.active.exp4{
+	height: 9rem;
+}
+.timelineDescription.active.exp5{
+	height: 13rem;
+}
+.timelineDescription.active.exp6{
+	height: 10rem;
+}
+.timelineDescription.active p, .timelineDescription.active p a{
 	cursor:auto;
 	position:relative;
 	transition:color 0.3s;
@@ -183,7 +202,6 @@
 	-webkit-user-select: auto; /* Safari */
   -ms-user-select: auto; /* IE 10 and IE 11 */
 }
-
-.gray_text {
-	color:#666666;
+.timelineDescription.active p a {
+	cursor:pointer;
 }
