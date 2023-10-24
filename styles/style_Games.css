@@ -29,7 +29,7 @@
   padding:3% 3% 3% 3%;
 }
 .game_container h1 {
-  font-size: 3rem;
+  font-size: 5rem;
   text-shadow: #000000;
 }
 .game_container p {
@@ -70,6 +70,22 @@
 }
 .blobArtLinks:hover {
 	background-color: rgba(148, 77, 44, 0.7);
+}
+.dungeonSLinks {
+  background-color: rgba(11, 54, 109, 0.767);
+	padding: 1em 0 1em 0;
+	border-radius:2mm;
+	font-size: 200%;
+	text-decoration: none;
+	color:white;
+  display: inline-block;
+  width:10em;
+  text-align:center;
+  margin:0.8em;
+  height:1em;
+}
+.dungeonSLinks:hover {
+	background-color: rgba(11, 54, 109, 0.7);
 }
 .gameDescription {
   background-color: rgba(0, 0, 0, 0.6);
