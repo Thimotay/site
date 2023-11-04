@@ -11,12 +11,13 @@
 		<link rel="stylesheet" href="styles/style_global.css"/>
 		<link rel="stylesheet" href="styles/style_projets.css"/>
   </head>
-	<body>
-		<nav class="nav_cont" id="goToTop">
+	<body  id="goToTop">
+		<nav class="nav_cont">
 			<div class="nav_site"><a href="index.html"><p>Accueil</p></a></div>
-      <div class="nav_site"><a href="projects.html"><p>Projets</p></a></div>
+      <div class="nav_site"><a href="projects.html" style="background-color: #dbdbdb;"><p>Projets</p></a></div>
 			<div class="nav_site"><a href="games.html"><p>Jeux</p></a></div>
-			<div class="nav_lang"><p>FR / <a href="en/index.html">EN</a></p></div>
+			<div class="returntop" style ="background:linear-gradient(to right, #5092e2, #64e1fa);"><a href="#goToTop">Haut</a></div>
+			<div class="nav_lang"><p>FR / <a href="en/projects.html">EN</a></p></div>
 		</nav>
 		<div class="header-frontpage" style="background-image: url(./assets/images/pressure_Vsite.png);">
 			<h1>Projets</h1>
@@ -26,32 +27,104 @@
 			<a href="#goToLaelith" style="text-decoration:none;" class="nav_page_som"><li>PFE - Laelith</li></a>
 			<a href="#goToErosion" style="text-decoration:none;" class="nav_page_som"><li>Erosion</li></a>
 			<a href="#goToWattfor" style="text-decoration:none;" class="nav_page_som"><li>Wattfor</li></a>
-			<div class="returntop" style ="background:linear-gradient(to right, #5092e2, #64e1fa);"><a href="#goToTop">Haut</a></div>
+			<a href="#goToCpp" style="text-decoration:none;" class="nav_page_som"><li>Jeu C++</li></a>
 		</nav>
 		<div class="main">
 			<div class="container" id="goToSite">
 				<div class="article">
-					
+					<h1>Site personnel</h1>
+					<div class="visualOnRight">
+						<a href="assets\images\pressure.png" target="_blank"><img src="assets\images\pressure.png" style="height:12rem;" alt="Dessin d'une femme en apesanteur"></a>
+						<a href="assets\images\psychokwak.png" target="_blank"><img src="assets\images\psychokwak.png" style="height:12rem;" alt="Dessin de psychokwak"></a>
+					</div>
+					<p class="gray_text">
+						J'ai codé mon site personnel (celui sur lequel vous êtes) et je l'utilise comme un portfolio.
+						<br>
+						Il a été conçu comme un projet d'apprentissage, j'ai décidé de ne pas utiliser de template déjà fait.
+						J'ai donc développé et mis en pratique mes compétences en HTML, CSS et JavaScript pour créer ce site.
+						Je continu de le mettre à jour avec de nouvelles expériences et de nouveaux projets.
+						Et je dois encore l'adapter au format téléphone car il y a de nombreux problèmes de scalling.
+						<br>
+						<br>
+						J'ai intégré mes propres dessins en fond de chaque page apportant une touche personnelle à mon site.
+						Vous pouvez avoir la version originale des dessins en cliquant sur les images.
+						<br>
+						<br>
+						Le code est disponible sur <a href="https://github.com/mathcoutant/mathcoutant.github.io" target="_blank">GitHub</a>.
+					</p>
 				</div>
 				<hr id="goToLaelith">
 				<div class="article">
-				
+					<h1>Laelith Copilot</h1>
+					<div class="visualOnRight">
+						<img src="assets\images\lealithLogo.jpg" style="height:15rem;" alt="Logo de Laelith">
+					</div>
+					<p class="gray_text">
+						Mon projet de dernière année d'école d'ingénieur consiste en l'inclusion d'une IA génératrice de texte dans un éditeur de scénario de jeux de rôle. 
+						Le jeu de rôle déjà existant proposant l'éditeur s'appelle <a href="https://www.aidedd.org/univers/laelith/" target="_blank">Laelith</a>.
+						<br>
+						<br>
+						Avec notre ajout, le créateur de scénario aura seulement à fournir une courte description de l'action ainsi que, s'il le veut, les différents résultats de l'extrait qui l'intéresse.
+						Ensuite, l'IA se charge d'écrire le texte qui décrit l'action.
+						Cela permet de faire gagner beaucoup de temps à l'écrivain et peut-être de proposer des idées originales.
+						<br>
+						<br>
+						Le principal défi à relever est de restreindre l'IA à l'univers du jeu de rôle.
+						Il faut qu'elle se base sur les descriptions déjà existantes, qu'elle n'invente pas de nouveaux éléments importants de l'univers, le tout en restant créative.
+						<br>
+						Il a aussi fallu inclure une interface dans un projet déjà existant, ce qui implique de l'analyse de code et de la reflexion sur le design de notre solution pour que le tout reste instinctif.
+					</p>
 				</div>
 				<hr id="goToErosion">
 				<div class="article">
-					
+					<h1>Simulation d'érosion</h1>
+					<p class="gray_text">
+						L'objectif de ce projet est de créer un simulateur d'érosion en utilisant des shaders.
+						Tout se passe dans la carte graphique où un compute shader itère sur le terrain pour simuler l'érosion.
+						<br>
+						<br>
+						La principale difficulté de ce projet était de travailler directement sur un terrain en 3D, composé de voxels.
+						En effet la plupart des simulateurs déjà existants travaillent sur un plan 2D qui va être déformé. 
+						<br>
+						<br>
+						Vous pouvez retrouver le projet sur <a href="https://github.com/mathcoutant/Terrain_Erosion" target="_blank">GitHub</a>.
+					</p>
 				</div>
 				<hr id="goToWattfor">
 				<div class="article">
-					
+					<h1>Wattfor</h1>
+					<p class="gray_text">
+						Il s'agit d'un projet scolaire visant à évaluer la consommation électrique des jeux-vidéos massivement multijoueurs, en particulier de Fortnite.
+						<br>
+						<br>
+						Pour cela nous avons mesuré la consommation du jeu sur différentes configurations. 
+						Cela nous permet d'avoir une estimation de la consommation moyenne côté client.
+						Pour estimer la consommation côté serveur nous avons écrit un script en C simulant les échanges réseaux qui ont lieu entre un serveur et 100 clients.
+						<br>
+						<br>
+						Le résultat de cette étude est que la consommation côté serveur est très optimisée et quasiment négligeable comparé à la consommation côté client.
+						Pour réduire la consommation de ce type de jeu il est donc essentiel que les jeux soient optimisés côté client.
+						<br>
+						Vous pouvez retrouver notre rapport <a href="assets\wattfor.pdf" target="_blank">ici</a> et le code de la simulation sur <a href="https://github.com/mathcoutant/Wattfor" target="_blank">GitHub</a>.
+					</p>
 				</div>
 				<hr id="goToCpp">
 				<div class="article">
-					
-				</div>
-				<hr id="goTo">
-				<div class="article">
-					
+					<h1>Jeu C++</h1>
+					<div class="visualOnRight">
+						<img src="assets\icon.png" style="height:10rem;" alt="Image du jeu">
+					</div>
+					<p class="gray_text">
+						Pour découvrir et apprendre le langage C++ j'ai développé un petit jeu avec un ami.
+						<br>
+						<br>
+						Pour cela nous avons utilisé la librairie SFML qui facilite la création de jeux.
+						Le jeu reste simpliste mais nous a permis de comprendre les bases du langage et son fonctionnement.
+						Particulièrement en ce qui concerne les pointeurs (unique_ptr, shared_ptr) et le stockage de données.
+						<br>
+						<br>
+						Vous pouvez retrouver le projet sur <a href="https://github.com/mathcoutant/projet-cpp" target="_blank">GitHub</a>.
+					</p>
 				</div>
 				<hr>
 				<div class="article">
@@ -61,7 +134,5 @@
 		<footer>
 			<p>Merci à <a href="https://pages.github.com/" target="_blank">GitHub Pages</a> de fournir l'hébergement du site.</p>
 		</footer>
-		<script src="scripts/scrollRevealAnim.js"></script>
-		<script src="scripts/timelineSelector.js"></script>
 	</body>
 </html>

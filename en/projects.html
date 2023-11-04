@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta charset="utf-8" />
+		<meta name="author" content="Mathieu Coutant">
+		<meta name="description" content="My website to put my creations.">
+		
+		<title>MC - Projets</title>
+		
+		<link rel="icon" href="../assets/icon.png">
+		<link rel="stylesheet" href="../styles/style_global.css"/>
+		<link rel="stylesheet" href="../styles/style_projets.css"/>
+  </head>
+	<body  id="goToTop">
+		<nav class="nav_cont">
+			<div class="nav_site"><a href="index.html"><p>Home</p></a></div>
+      <div class="nav_site"><a href="projects.html" style="background-color: #dbdbdb;"><p>Projects</p></a></div>
+			<div class="nav_site"><a href="games.html"><p>Games</p></a></div>
+			<div class="returntop" style ="background:linear-gradient(to right, #5092e2, #64e1fa);"><a href="#goToTop">Top</a></div>
+			<div class="nav_lang"><p><a href="../projects.html">FR</a> / EN</p></div>
+		</nav>
+		<div class="header-frontpage" style="background-image: url(../assets/images/pressure_Vsite.png);">
+			<h1>Projects</h1>
+		</div>
+		<nav class="nav_page">
+			<a href="#goToSite" style="text-decoration:none;" class="nav_page_pres"><li>Website</li></a>
+			<a href="#goToLaelith" style="text-decoration:none;" class="nav_page_som"><li>Laelith</li></a>
+			<a href="#goToErosion" style="text-decoration:none;" class="nav_page_som"><li>Erosion</li></a>
+			<a href="#goToWattfor" style="text-decoration:none;" class="nav_page_som"><li>Wattfor</li></a>
+      <a href="#goToCpp" style="text-decoration:none;" class="nav_page_som"><li>C++ game</li></a>
+		</nav>
+		<div class="main">
+			<div class="container" id="goToSite">
+				<div class="article">
+					<h1>Personal website</h1>
+					<div class="visualOnRight">
+						<a href="../assets\images\pressure.png" target="_blank"><img src="../assets\images\pressure.png" style="height:12rem;" alt="Drawing of a floating woman"></a>
+						<a href="../assets\images\psychokwak.png" target="_blank"><img src="../assets\images\psychokwak.png" style="height:12rem;" alt="Drawing of a pokemon"></a>
+					</div>
+					<p class="gray_text">
+						I've coded my personal website (the one you're on) and use it as a portfolio.
+						<br>
+						It was designed as a learning project, so I decided not to use a template that had already been made. 
+            So I developed and applied my HTML, CSS and JavaScript skills to create this site. 
+            I continue to update it with new experiences and projects.
+            And I still have to adapt it to the phone format, as there are many scalling problems.
+						<br>
+						<br>
+						I've integrated my own drawings in the background of each page, bringing a personal touch to my site. 
+            You can have the original version of the drawings by clicking on the images.
+						<br>
+						<br>
+						The code is available on <a href="https://github.com/mathcoutant/mathcoutant.github.io" target="_blank">GitHub</a>.
+					</p>
+				</div>
+				<hr id="goToLaelith">
+				<div class="article">
+					<h1>Laelith Copilot</h1>
+					<div class="visualOnRight">
+						<img src="../assets\images\lealithLogo.jpg" style="height:15rem;" alt="Laelith logo">
+					</div>
+					<p class="gray_text">
+						My final-year engineering school project involves including a text-generating AI in a role-playing scenario editor. 
+            The role-playing game editor already available is for the game called <a href="https://www.aidedd.org/univers/laelith/" target="_blank">Laelith</a>.
+						<br>
+						<br>
+						With our code, the script writer will only have to provide a short description of the action and, if desired, the various results of the extract he's interested in. 
+            The AI then writes the text describing the action. 
+            This saves the writer a lot of time, and may even lead to some original ideas.
+						<br>
+						<br>
+						The main challenge is to restrict the AI to the role-playing universe. 
+            It needs to build on existing descriptions and not invent important new elements of the universe while remaining creative.
+						<br>
+						We also had to include an interface in an existing project, which meant analyzing the code and rethinking the design of our solution to keep it instinctive.
+					</p>
+				</div>
+				<hr id="goToErosion">
+				<div class="article">
+					<h1>Erosion Simulation</h1>
+					<p class="gray_text">
+						The aim of this project is to create an erosion simulator using shaders. 
+            Everything happens in the graphics card, where a compute shader iterates over the terrain to simulate erosion.
+						<br>
+						<br>
+						The main difficulty of this project was to work directly on a 3D terrain made up of voxels.
+						Indeed, most existing simulators work on a 2D plane that will be deformed.
+						<br>
+						<br>
+						You can find the project on <a href="https://github.com/mathcoutant/Terrain_Erosion" target="_blank">GitHub</a>.
+					</p>
+				</div>
+				<hr id="goToWattfor">
+				<div class="article">
+					<h1>Wattfor</h1>
+					<p class="gray_text">
+						This is a school project to assess the power consumption of massively multiplayer video games, in particular Fortnite.
+						<br>
+						<br>
+						To do this, we measured the game's power consumption on different configurations. 
+						This gives us an estimate of average client-side consumption.
+						To estimate server-side consumption, we wrote a C script simulating the network exchanges that take place between a server and 100 clients.
+						<br>
+						<br>
+						The result of this study is that server-side consumption is highly optimized and almost negligible compared to client-side consumption.
+						To reduce the consumption of this type of game, it is therefore essential that client-side games are optimized.
+						<br>
+						You can find our report in French <a href="../assets\wattfor.pdf" target="_blank">here</a> and the simulation code on <a href="https://github.com/mathcoutant/Wattfor" target="_blank">GitHub</a>.
+					</p>
+				</div>
+				<hr id="goToCpp">
+				<div class="article">
+					<h1>C++ Game</h1>
+					<div class="visualOnRight">
+						<img src="../assets\icon.png" style="height:10rem;" alt="Screenshot of the game">
+					</div>
+					<p class="gray_text">
+						To discover and learn the C++ language, I developed a little game with a friend.
+						<br>
+						<br>
+						To do this, we used the SFML library, which facilitates the creation of games.
+						The game remains simplistic, but has enabled us to understand the basics of the language and how it works.
+						Particularly with regard to pointers (unique_ptr, shared_ptr) and data storage.
+						<br>
+						<br>
+						You can find the project on <a href="https://github.com/mathcoutant/projet-cpp" target="_blank">GitHub</a>.
+					</p>
+				</div>
+				<hr>
+				<div class="article">
+				</div>
+			</div>
+		</div>
+		<footer>
+			<p>Thank to <a href="https://pages.github.com/" target="_blank">GitHub Pages</a> for providing site hosting.</p>
+		</footer>
+	</body>
+</html>
